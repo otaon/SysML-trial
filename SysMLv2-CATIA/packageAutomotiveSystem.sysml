@@ -26,7 +26,7 @@ package AutomotiveSystem {
         port exhaustPort : ExhaustPort;
     }
 
-    // 【電動モーター】型の定義：【エンジン】型の部分集合として定義する。
+    // 【電動モーター】型の定義：【エンジン】型を特殊化(継承)する。
     part def ElectricMotor :> Engine {
         /*
          * 属性
@@ -73,7 +73,7 @@ package AutomotiveSystem {
         port fuelPort : FuelPort;
     }
 
-    // 【電気自動車】型の定義：【自動車】型の部分集合として定義する。
+    // 【電気自動車】型の定義：【自動車】型を特殊化(継承)する。
     part def ElectricVehicle :> Vehicle {
         /*
          * ポート
